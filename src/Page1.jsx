@@ -1,7 +1,13 @@
+import { Link, Outlet } from "react-router-dom";
+
 export const Page1 = () => {
   return (
-    <div>
+    <>
       <h2>Page1</h2>
-    </div>
+      <Link to="/page1/detaila">DetailA</Link>
+      <br />
+      <Link to="/page1/detailb">DetailB</Link>
+      <Outlet />
+    </>
   );
 };
